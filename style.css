@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Neue Machina;
+    src: url(neue-machina-free-for-personal-use/Neue_Machina-Free_for_Personal_Use/NeueMachina-Regular.otf);
+}
+
+*::selection{
+    background-color: #ef9d71;
+}
+
+body[theme = "black"]{
+    background-color: black;
+    color: white;
+}
+
+.row{
+    font-family: Neue Machina;
+}
+
+.heading{
+    font-family: Neue Machina;
+}
