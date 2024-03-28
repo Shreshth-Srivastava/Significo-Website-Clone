@@ -12,10 +12,24 @@ body[theme = "black"]{
     color: white;
 }
 
+body[theme = "cyan"]{
+    background-color: hsl(180, 100%, 40%);
+    color: hsl(180, 100%, 30%);
+}
+
+body[theme = "salmon"]{
+    background-color: hsl(6, 93%, 71%);
+    color: hsl(6, 93%, 60%);
+}
+
 .row{
     font-family: Neue Machina;
 }
 
 .heading{
+    font-family: Neue Machina;
+}
+
+.slide{
     font-family: Neue Machina;
 }
