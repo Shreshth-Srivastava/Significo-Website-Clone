@@ -27,8 +27,16 @@ body[theme = "white"]{
     color: black;
 }
 
+.home>video{
+    --clip: 100%;
+    clip-path: circle(var(--clip) at 50% 50%);
+    transition: .3s linear;
+}
+
+
 .row{
     font-family: Neue Machina;
+    /* transition: .3s linear; */
 }
 
 .heading{
