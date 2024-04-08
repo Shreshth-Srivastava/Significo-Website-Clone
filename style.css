@@ -76,3 +76,11 @@ body[theme = "white"]{
 .component:hover{
     color: white;
 }
+
+.article{
+    font-family: Neue Machina;
+}
+
+.btn{
+    font-family: Neue Machina;
+}
