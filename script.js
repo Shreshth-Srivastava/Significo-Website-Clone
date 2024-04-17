@@ -49,7 +49,7 @@ function slidesAnimation(){
             trigger:".page-2",
             scroller: "body",
             start: "top top",
-            end: "bottom top",
+            end: "bottom -50%",
             scrub: 4,
             pin: true,
             // markers: true,
@@ -58,5 +58,26 @@ function slidesAnimation(){
     })
 }
 
+function teamAnimations(){
+    var components = document.querySelectorAll('.component');
+    components.forEach((component) => {
+        var photo = component.querySelector('.photo');
+        var a = component.getBoundingClientRect();
+        component.addEventListener('mousemove',(dets)=>{
+            photo.style.opacity = '1';
+            let compstart = a.left;
+            let compend = a.right;
+            let b = gsap.utils.mapRange(compstart,compend,-200,200);
+            photo.style.translate = `${b(dets.clientX)}%`;
+            // photo.style.transform = `translate(${b(dets.clientX)}%,-50%)`;
+        });
+
+        component.addEventListener('mouseleave',()=>{
+            photo.style.opacity = '0';
+        });
+    });
+}
+
 homePageAnimation();
 slidesAnimation();
+teamAnimations();

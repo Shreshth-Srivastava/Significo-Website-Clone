@@ -96,3 +96,7 @@ body[theme = "white"]{
 #real{
     transition: .5s linear;
 }
+
+.photo{
+    transition: .3s linear;
+}
