@@ -78,6 +78,29 @@ function teamAnimations(){
     });
 }
 
+function textAnimations(){
+    var clutter = "";
+    document.querySelector('.desc-1').textContent.split("  ").forEach((e)=>{
+        if(e == " ") clutter += "<span>&nbsp;</span>";
+        clutter += `<span>${e}</span>`;
+    });
+    var a = 0;
+    document.querySelector(".desc-1").innerHTML = clutter;
+    document.querySelectorAll(".desc-1 span").forEach((e)=>{
+       e.style.opacity = '.2';
+    //    gsap.to(`${e}`,{
+    //     opacity: 1,
+    //     scrollTrigger:{
+    //         trigger: '.desc-1',
+    //         scroller: 'body',
+    //         markers: true,
+    //     }
+    //    })
+    });
+    
+}
+
 homePageAnimation();
 slidesAnimation();
 teamAnimations();
+textAnimations();
